@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+  background-color: white;
+  width: 320px;
+  border-radius: 0.8rem;
+}
+.card-img {
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.card-body {
+  padding: 0.75rem 1.5rem 1.5rem;
+}
+.card-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1rem;
+}
+.item-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+.item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 2px;
+}
+.item-text p {
+  font-size: 0.85rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.item-btn {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 0.8rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.75rem 2rem 0 hsl(245, 75%, 85%);
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 280px;
+  }
+}
